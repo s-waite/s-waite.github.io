@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+3:wght@400;700&display=swap');
+
+body {
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #2b3339;
+    color: #d3c6aa;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.a-z_index a {
+    color: #d3c6aa;
+    background-color: #2b3339;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    color: #e67e80;
+}
+
+table {
+    table-layout: fixed;
+    border-radius: 15px;
+    width: 100%;
+    border: 1px solid #d3c6aa;
+    border-collapse: separate;
+    border-spacing: 0px;
+    overflow: hidden;
+    font-family: "Source Sans 3";
+}
+
+code {
+    font-family: 'Source Code Pro';
+}
+
+th {
+    background-color: #7fbbb3;
+    color: #394f5a;
+    font-weight: bold;
+    font-size: large;
+}
+
+td {
+    font-weight: normal;
+}
+
+td, th {
+    padding: 20px;
+}
+
+
+thead th:nth-child(1) {
+    width: 20%;
+}
+
+thead th:nth-child(2),
+thead th:nth-child(3) {
+    width: 40%
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #4c555b;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #3a454a;
+}
