@@ -31,18 +31,18 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     background-color: var(--bg0);
-    color: #d3c6aa;
+    color: var(--fg);
     font-family: 'Source Sans 3', sans-serif;
 }
 
 .a-z_index a {
-    color: #d3c6aa;
-    background-color: #5c6a72;
+    color: var(--fg);
+    background-color: var(--bg4);
     padding: 10px;
     display: inline-block;
     margin-top: 10px;
     border-radius: 10px;
-    border: 1px solid #d3c6aa;
+    border: 1px solid var(--fg);
     text-decoration: none;
 }
 
@@ -50,14 +50,14 @@ h1 {
     text-align: left;
     margin-left: 1em;
     margin-bottom: 0.5em;
-    color: #e67e80;
+    color: var(--red)
 }
 
 table {
     table-layout: fixed;
     border-radius: 15px;
     width: 100%;
-    border: 1px solid #d3c6aa;
+    border: 1px solid var(--fg);
     border-collapse: separate;
     border-spacing: 0px;
     overflow: hidden;
@@ -71,8 +71,8 @@ code {
 }
 
 th {
-    background-color: #7fbbb3;
-    color: #394f5a;
+    background-color: var(--blue);
+    color: var(--bg-blue);
     font-weight: bold;
     font-size: large;
 }
@@ -93,13 +93,13 @@ thead th:nth-child(1) {
 
 thead th:nth-child(2),
 thead th:nth-child(3) {
-    width: 40%
+    width: 40%;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #4c555b;
+    background-color: var(--bg4);
 }
 
 tbody tr:nth-child(even) {
-    background-color: #3a454a;
+    background-color: var(--bg2);
 }
