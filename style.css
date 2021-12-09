@@ -15,6 +15,10 @@ body {
     background-color: #5c6a72;
     padding: 10px;
     display: inline-block;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #d3c6aa;
+    text-decoration: none;
 }
 
 h1 {
@@ -37,6 +41,8 @@ table {
 
 code {
     font-family: 'Source Code Pro';
+    font-weight: normal;
+    font-size: 14px;
 }
 
 th {
@@ -48,6 +54,7 @@ th {
 
 td {
     font-weight: normal;
+    text-align: left;
 }
 
 td, th {
