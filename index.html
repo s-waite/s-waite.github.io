@@ -11,162 +11,148 @@
 <body>
     <script src="./prismjs/prism.js"></script>
 
-    <code class="language-bash">#!/bin/bash
-
-###### CONFIG
-ACCEPTED_HOSTS=&quot;/root/.hag_accepted.conf&quot;
-BE_VERBOSE=false
-
-if [ &quot;$UID&quot; -ne 0 ]
-then
- echo &quot;Superuser rights required&quot;
- exit 2
-fi
-
-genApacheConf(){
- echo -e &quot;# Host ${HOME_DIR}$1/$2 :&quot;
-}
-
-echo &#39;&quot;quoted&quot;&#39; | tr -d \&quot; &gt; text.txt
-</code>
     <!-------------------- THE A-Z INDEX -------------------->
-    <div class="a-z_index">
+    <div class="sidenav">
         <a href="#google">Google</a>
         <a href="#macos">MacOS</a>
         <a href="#vim">Vim</a>
     </div>
     <!-------------------- THE START OF THE TABLES -------------------->
     <!-------------------- MacOS -------------------->
-    <h1 id="macos">MacOS Specific</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Example</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <code class="language-bash">pmset</code>
-                </td>
-                <td>power management settings</td>
-                <td>
-                    <code class="language-bash">sudo pmset -a lowpowermode 1</code>
-                </td>
-            </tr>
-            <tr>
-                <td><code class="language-bash">mdutil</code></td>
-                <td>manage spotlight indexing</td>
-                <td>
-                    <code class="language-bash">sudo mdutil -E /Volume</code>
-                </td>
-            </tr>
-            <tr>
-                <td><code class="language-bash">osascript -e 'id of <em>someApp</em>'</code></td>
-                <td>find the bundle id of an app</td>
-                <td>
-                    <code class="language-bash">osascript -e 'id of app "Finder"'</code>
-                </td>
-            </tr>
-            <tr>
-                <td><code class="language-bash">defaults</code></td>
-                <td>command line interface to set defaults</td>
-                <td>
-                    <code
-                        class="language-bash">defaults write com.apple.Dock autohide-delay -float 0; killall Dock</code>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <!-------------------- VIM -------------------->
-    <h1>Vim</h1>
-    <table>
-        <thead>
-            <tr>
+    <div id="page-content-area">
+        <div id="page-content">
+            <h1 id="macos">MacOS Specific</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <code class="language-bash">pmset</code>
+                        </td>
+                        <td>power management settings</td>
+                        <td>
+                            <code class="language-bash">sudo pmset -a lowpowermode 1</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code class="language-bash">mdutil</code></td>
+                        <td>manage spotlight indexing</td>
+                        <td>
+                            <code class="language-bash">sudo mdutil -E /Volume</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code class="language-bash">osascript -e 'id of <em>someApp</em>'</code></td>
+                        <td>find the bundle id of an app</td>
+                        <td>
+                            <code class="language-bash">osascript -e 'id of app "Finder"'</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code class="language-bash">defaults</code></td>
+                        <td>command line interface to set defaults</td>
+                        <td>
+                            <code
+                                class="language-bash">defaults write com.apple.Dock autohide-delay -float 0; killall Dock</code>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-------------------- VIM -------------------->
+            <h1>Vim</h1>
+            <table>
+                <thead>
+                    <tr>
 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
 
-            </tr>
-        </tbody>
-    </table>
+                    </tr>
+                </tbody>
+            </table>
+            <!-------------------- Google -------------------->
+            <h1 id="google">Google Search</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>exact match</code></td>
+                        <td>surround query in quotes to look for an exact match</td>
+                        <td><code>"error code 1234"</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>site: url</code></td>
+                        <td>only return results from a certain site</td>
+                        <td><code>site:stackoverflow.com search terms</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>-termToExclude</code></td>
+                        <td>exclude a term from your results</td>
+                        <td><code>-python</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>after:date</code></td>
+                        <td>filter results to those published after a certain date</td>
+                        <td><code>cows after:2020</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>before:date</code></td>
+                        <td>filter results to those published before a certain date</td>
+                        <td><code>crazy clowns before:2018</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>date..date</code></td>
+                        <td>search a range of dates</td>
+                        <td><code>2010..2020</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>number..number</code></td>
+                        <td>search a range of numbers</td>
+                        <td><code>$10..$20</code></td>
+                    </tr>
+                    <tr>
+                        <code><td>*</td></code>
+                        <td>wildcard operator, can be used to search for all possibilities</td>
+                        <td><code>how to build * with python</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>site:*.site.com www</code></td>
+                        <td>find all subdomains of a site</td>
+                        <td><code>site:*.fireship.io -www</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>filetype:type</code></td>
+                        <td>only return results with specified filetype</td>
+                        <td><code>filetype:pdf</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>related:url</code></td>
+                        <td>find websites similar to the one you specify</td>
+                        <td><code>related:angular.io</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>cache:url</code></td>
+                        <td>displays the latest version of a website that google has cached on its servers</td>
+                        <td><code>cache:angular.io</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
-<!-------------------- Google -------------------->
-<h1 id="google">Google Search</h1>
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Example</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>exact match</code></td>
-            <td>surround query in quotes to look for an exact match</td>
-            <td><code>"error code 1234"</code></td>
-        </tr>
-        <tr>
-            <td><code>site: url</code></td>
-            <td>only return results from a certain site</td>
-            <td><code>site:stackoverflow.com search terms</code></td>
-        </tr>
-        <tr>
-            <td><code>-termToExclude</code></td>
-            <td>exclude a term from your results</td>
-            <td><code>-python</code></td>
-        </tr>
-        <tr>
-            <td><code>after:date</code></td>
-            <td>filter results to those published after a certain date</td>
-            <td><code>cows after:2020</code></td>
-        </tr>
-        <tr>
-            <td><code>before:date</code></td>
-            <td>filter results to those published before a certain date</td>
-            <td><code>crazy clowns before:2018</code></td>
-        </tr>
-        <tr>
-            <td><code>date..date</code></td>
-            <td>search a range of dates</td>
-            <td><code>2010..2020</code></td>
-        </tr>
-        <tr>
-            <td><code>number..number</code></td>
-            <td>search a range of numbers</td>
-            <td><code>$10..$20</code></td>
-        </tr>
-        <tr>
-            <code><td>*</td></code>
-            <td>wildcard operator, can be used to search for all possibilities</td>
-            <td><code>how to build * with python</code></td>
-        </tr>
-        <tr>
-            <td><code>site:*.site.com www</code></td>
-            <td>find all subdomains of a site</td>
-            <td><code>site:*.fireship.io -www</code></td>
-        </tr>
-        <tr>
-            <td><code>filetype:type</code></td>
-            <td>only return results with specified filetype</td>
-            <td><code>filetype:pdf</code></td>
-        </tr>
-        <tr>
-            <td><code>related:url</code></td>
-            <td>find websites similar to the one you specify</td>
-            <td><code>related:angular.io</code></td>
-        </tr>
-        <tr>
-            <td><code>cache:url</code></td>
-            <td>displays the latest version of a website that google has cached on its servers</td>
-            <td><code>cache:angular.io</code></td>
-        </tr>
-    </tbody>
-</table>
 
 </html>

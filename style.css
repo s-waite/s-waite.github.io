@@ -24,26 +24,39 @@
     --grey2: #9da9a0;
 }
 
-
 body {
-    text-align: center;
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
     background-color: var(--bg0);
     color: var(--fg);
     font-family: 'Source Sans 3', sans-serif;
 }
 
-.a-z_index a {
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.sidenav a {
     color: var(--fg);
     background-color: var(--bg4);
     padding: 10px;
-    display: inline-block;
-    margin-top: 10px;
+    margin: 10px 10px 10px 15px;
+    display: block;
     border-radius: 10px;
     border: 1px solid var(--fg);
     text-decoration: none;
+}
+
+#page-content-area {
+    margin-left: 160px;
+}
+
+#page-content {
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 h1 {
