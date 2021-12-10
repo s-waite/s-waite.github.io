@@ -16,7 +16,7 @@
     </div>
     <!-------------------- THE START OF THE TABLES -------------------->
     <!-------------------- MacOS -------------------->
-    <h1>MacOS Specific</h1>
+    <h1 id="macos">MacOS Specific</h1>
     <table>
         <thead>
             <tr>
@@ -27,24 +27,24 @@
         </thead>
         <tbody>
             <tr>
-                <td>pmset</td>
+                <td><code>pmset</code></td>
                 <td>power management settings</td>
                 <td><code>sudo pmset -a lowpowermode 1</code></td>
             </tr>
             <tr>
-                <td>pmset</td>
-                <td>power management settings</td>
-                <td><code>sudo pmset -a lowpowermode 1</code></td>
+                <td><code>mdutil</code></td>
+                <td>manage spotlight indexing</td>
+                <td><code>sudo mdutil -E /Volume</code></td>
             </tr>
             <tr>
-                <td>pmset</td>
-                <td>power management settings</td>
-                <td><code>sudo pmset -a lowpowermode 1</code></td>
+                <td><code>osascript -e 'id of <em>someApp</em>'</code></td>
+                <td>find the bundle id of an app</td>
+                <td><code>osascript -e 'id of app "Finder"'</code></td>
             </tr>
             <tr>
-                <td>pmset</td>
-                <td>power management settings</td>
-                <td><code>sudo pmset -a lowpowermode 1</code></td>
+                <td><code>defaults</code></td>
+                <td>command line interface to set defaults</td>
+                <td><code>defaults write com.apple.Dock autohide-delay -float 0; killall Dock</code></td>
             </tr>
         </tbody>
     </table>
