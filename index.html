@@ -4,10 +4,31 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link href="prism.css" rel="stylesheet">
     <title>Sam Waite</title>
 </head>
 
 <body>
+    <script src="prism.js"></script>
+
+    <pre><code class="language-bash">#!/bin/bash
+
+###### CONFIG
+ACCEPTED_HOSTS=&quot;/root/.hag_accepted.conf&quot;
+BE_VERBOSE=false
+
+if [ &quot;$UID&quot; -ne 0 ]
+then
+ echo &quot;Superuser rights required&quot;
+ exit 2
+fi
+
+genApacheConf(){
+ echo -e &quot;# Host ${HOME_DIR}$1/$2 :&quot;
+}
+
+echo &#39;&quot;quoted&quot;&#39; | tr -d \&quot; &gt; text.txt
+</code></pre>
     <!-------------------- THE A-Z INDEX -------------------->
     <div class="a-z_index">
         <a href="#google">Google</a>
@@ -27,24 +48,34 @@
         </thead>
         <tbody>
             <tr>
-                <td><code>pmset</code></td>
+                <td>
+                    <pre><code class="language-bash">pmset</code></pre>
+                </td>
                 <td>power management settings</td>
-                <td><code>sudo pmset -a lowpowermode 1</code></td>
+                <td>
+                    <pre><code class="language-bash">sudo pmset -a lowpowermode 1</code></pre>
+                </td>
             </tr>
             <tr>
                 <td><code>mdutil</code></td>
                 <td>manage spotlight indexing</td>
-                <td><code>sudo mdutil -E /Volume</code></td>
+                <td>
+                    <pre><code class="language-bash">sudo mdutil -E /Volume</code></pre>
+                </td>
             </tr>
             <tr>
                 <td><code>osascript -e 'id of <em>someApp</em>'</code></td>
                 <td>find the bundle id of an app</td>
-                <td><code>osascript -e 'id of app "Finder"'</code></td>
+                <td>
+                    <pre><code class="language-shell">osascript -e 'id of app "Finder"'</code></pre>
+                </td>
             </tr>
             <tr>
                 <td><code>defaults</code></td>
                 <td>command line interface to set defaults</td>
-                <td><code>defaults write com.apple.Dock autohide-delay -float 0; killall Dock</code></td>
+                <td>
+                    <pre><code class="language-bash">defaults write com.apple.Dock autohide-delay -float 0; killall Dock</code></pre>
+                </td>
             </tr>
         </tbody>
     </table>
