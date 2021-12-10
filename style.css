@@ -48,6 +48,8 @@ body {
 
 h1 {
     text-align: left;
+    text-shadow: 1px 1px 1px black;
+
     margin-left: 1em;
     margin-bottom: 0.5em;
     color: var(--red)
@@ -72,7 +74,7 @@ code {
 
 th {
     background-color: var(--blue);
-    color: var(--bg-blue);
+    color: var(--bg_blue);
     font-weight: bold;
     font-size: large;
 }
