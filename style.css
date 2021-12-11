@@ -140,6 +140,10 @@ tbody tr:nth-child(even) {
         width: 100%;
     }
 
+    .sidenav a {
+        display: inline-block;
+    }
+
     #page-content-area {
         margin-left: 0px;
     }
