@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+3:wght@400;700&display=swap');
 
+@font-face {
+    font-family: 'iosevka-regular';
+    src: url('./fonts/iosevka-regular.woff2') format('woff2');
+}
+
 :root {
     --bg0: #2b3339;
     --bg1: #323c41;
@@ -43,11 +48,17 @@ body {
     color: var(--fg);
     background-color: var(--bg4);
     padding: 10px;
-    margin: 10px 10px 10px 15px;
     display: block;
     border-radius: 10px;
     border: 1px solid var(--fg);
     text-decoration: none;
+    margin: 10px 0px 10px 10px;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    color: var(--red);
+    border-color: var(--red);
 }
 
 #page-content-area {
@@ -55,8 +66,8 @@ body {
 }
 
 #page-content {
-    margin: 0 auto;
-    max-width: 1000px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 h1 {
@@ -80,9 +91,7 @@ table {
 }
 
 code {
-    font-family: 'Source Code Pro';
-    font-weight: normal;
-    font-size: 14px;
+    font-family: 'iosevka-regular';
 }
 
 th {
@@ -90,6 +99,7 @@ th {
     color: var(--bg_blue);
     font-weight: bold;
     font-size: large;
+    text-align: left;
 }
 
 td {
@@ -121,4 +131,26 @@ tbody tr:nth-child(odd) {
 
 tbody tr:nth-child(even) {
     background-color: var(--bg2);
+}
+
+@media screen and (max-width: 750px) {
+
+    .sidenav {
+        position: relative;
+        width: 100%;
+    }
+
+    #page-content-area {
+        margin-left: 0px;
+    }
+
+    #page-content {
+        margin: 0 10px;
+    }
+
+    td, th {
+        padding: 13px 5px;
+    }
+
+
 }
