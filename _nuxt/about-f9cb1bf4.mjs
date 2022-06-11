@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o,a,b as s}from"./entry-148a762b.mjs";const c={},n=a(" this is the about page "),r=s("img",{src:"/volcano.jpg",alt:""},null,-1),_=[n,r];function i(l,d){return t(),o("div",null,_)}var f=e(c,[["render",i]]);export{f as default};
