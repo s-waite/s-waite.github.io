@@ -1,1 +1,0 @@
-import{_ as t,o,c as n,d as a,w as c,b as s,e as _,a as r}from"./entry-41ef3f7e.mjs";const d={},i=s("h1",null,"Test",-1),l=r("Link");function u(x,f){const e=_;return o(),n("div",null,[i,a(e,{to:"/about"},{default:c(()=>[l]),_:1})])}var p=t(d,[["render",u]]);export{p as default};
